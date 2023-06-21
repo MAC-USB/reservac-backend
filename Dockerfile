@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:20.3-bullseye
 
 WORKDIR /app
 
