@@ -13,7 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: prueba
-      working-directory: /root/services/reserva/backend/
-      run: |
-        ls -a
-        pwd
+      run: docker compose up --build -d
