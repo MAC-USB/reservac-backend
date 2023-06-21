@@ -15,5 +15,5 @@ jobs:
     - name: prueba
       run: |
         ls -a
-        cd /root/services/backend
+        working-directory: /root/services/reserva/backend/
         ls 
