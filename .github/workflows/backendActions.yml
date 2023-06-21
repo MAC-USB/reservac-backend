@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: prueba
+      working-directory: /root/services/reserva/backend/
       run: |
         ls -a
-        working-directory: /root/services/reserva/backend/
-        ls 
+        pwd
