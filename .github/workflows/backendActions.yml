@@ -15,5 +15,5 @@ jobs:
     - name: Docker backend, db
       run: |
         cd ~/services/reservac/backend/
-        git pull https://github.com/Etvulk/reservac-backend.git
+        git pull https://github.com/MAC-USB/reservac-backend.git
         docker compose up --build -d
