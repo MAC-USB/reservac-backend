@@ -12,7 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: prueba
+    - name: Docker backend, db
       run: |
         cd ~/services/reservac/backend/
+        git pull https://github.com/Etvulk/reservac-backend.git
         docker compose up --build -d
