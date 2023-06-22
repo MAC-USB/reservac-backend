@@ -344,8 +344,8 @@ insert into career_subject(career, subject) values
 /*Rellenamos la tabla usuario*/
 /*Type 0000 departamento, 1111 estudiante, 2222 profesor, 3333 laboratorio, 4444 laboratorio master*/
 
-insert into usuario(id,name,email,type,is_verified,is_active, chief) values
-('15-11523', 'Neil Villamizar', '15-11523@usb.ve', 1111, false,0, '15-11523');
+/*insert into usuario(id,name,email,type,is_verified,is_active, chief) values
+ ('15-11523', 'Neil Villamizar', '15-11523@usb.ve', 1111, false,0, '15-11523');
 
 insert into usuario(id,name,email,type,is_verified,is_active, chief, clave) values
 ('12-10273', 'Jesus Kauze', '12-10273@usb.ve', 1111, true,1, '12-10273', '$2a$10$c8tYxQVE0.HHu9XVKSam.uarelO2Iqo6MBU1Wvu4mR5jkyvIpAuU.');
@@ -413,7 +413,7 @@ insert into usuario(id,name,email,type,is_verified,is_active, chief) values
 
 /*Rellenamos la tabla de room*/
 
-insert into room(id, name,owner_id, manager_id, is_active,description , last_used, first_used) values
+/*insert into room(id, name,owner_id, manager_id, is_active,description , last_used, first_used) values
 ('MYS-221', 'Sala Ken Thompson','eduardo', 'ldc', true, 'Aula computarizada fundada por Ken Thompson', '2020-07-02', '2018-06-05');
 
 insert into room(id, name,owner_id, manager_id, is_active,description , last_used, first_used) values
@@ -432,7 +432,7 @@ insert into room(id, name,owner_id, manager_id, is_active,description , last_use
 ('MYS-020', 'Sala E','cchang', 'ldac', true, 'Sala multimedia, solicitar televisor de ser necesario','2020-01-01', '2019-06-01');
 
 insert into room(id, name,owner_id, manager_id, is_active,description , last_used, first_used) values
-('MYS-015', 'Laboratorio de Bases de Datos','mgoncalves', 'bwl', true, 'Sala multimedia', '2020-07-02', '2018-06-05');
+('MYS-015', 'Laboratorio de Bases de Datos','mgoncalves', 'bwl', true, 'Sala multimedia', '2020-07-02', '2018-06-05');*/
 
 /*Rellenamos la tabla item*/
 
@@ -450,7 +450,7 @@ insert into item(name, description) values('Televisor', 'De 42 pulgadas');
 
 /*Rellenamos la tabla de room_item*/
 
-insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-019', 'ENE-MAR2020', 1, 15);
+/*insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-019', 'ENE-MAR2020', 1, 15);
 insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-019', 'ENE-MAR2020', 2, 15);
 insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-019', 'ENE-MAR2020', 3, 15);
 insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-019', 'ENE-MAR2020', 4, 15);
@@ -473,18 +473,18 @@ insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-219', 'E
 insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-220', 'ENE-MAR2020', 1, 8);
 insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-220', 'ENE-MAR2020', 2, 8);
 insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-220', 'ENE-MAR2020', 3, 8);
-insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-220', 'ENE-MAR2020', 4, 8);
+insert into room_item(room_id,trimester_id,item_id,quantity)values('MYS-220', 'ENE-MAR2020', 4, 8);*/
 
 /*Rellenamos room_request*/
 
-insert into room_request(room_id,requested_id,owner_id,manager_id,trimester_id,date,status)values('MYS-215', 'labf', 'eduardo', 'ldc', 'ENE-MAR2020', '2020-05-06','P');
+/*insert into room_request(room_id,requested_id,owner_id,manager_id,trimester_id,date,status)values('MYS-215', 'labf', 'eduardo', 'ldc', 'ENE-MAR2020', '2020-05-06','P');
 insert into room_request(room_id,requested_id,owner_id,manager_id,trimester_id,date,status)values('MYS-006', 'labf', 'cchang', 'ldac', 'ENE-MAR2020', '2020-01-06','P');
 insert into room_request(room_id,requested_id,owner_id,manager_id,trimester_id,date,status)values('MYS-006', 'labf', 'eduardo', 'ldc', 'ENE-MAR2020', '2020-01-06','P');
 
 /*Rellenamos reservation_request*/
 /*P de pendiente, A aceptado, R rechazado*/
 -- 1
-insert into reservation_request(requester_id, room_id, subject_id, send_time, trimester_id, material_needed, quantity, status)
+/*insert into reservation_request(requester_id, room_id, subject_id, send_time, trimester_id, material_needed, quantity, status)
 values ('15-10611', 'MYS-019', 'CI2693', '2020-02-02', 'ENE-MAR2020', 'Sillas, mesas', 15, 'P');
 -- 2
 insert into reservation_request(requester_id, room_id, subject_id, send_time, trimester_id, material_needed, quantity, status)
@@ -671,11 +671,11 @@ insert into reservation_request(requester_id, room_id, subject_id, send_time, tr
 values ('CI', 'MYS-019', 'CI2692', '2019-11-11', 'SEP-DIC2019', 'Sillas, mesas y computadoras', 20, 'P');
 -- 63
 insert into reservation_request(requester_id, room_id, subject_id, send_time, trimester_id, material_needed, quantity, status)
-values ('CI', 'MYS-019', 'CI4835', '2019-11-11', 'SEP-DIC2019', 'Sillas, mesas y computadoras', 28, 'P');
+values ('CI', 'MYS-019', 'CI4835', '2019-11-11', 'SEP-DIC2019', 'Sillas, mesas y computadoras', 28, 'P');*/
 
 /*Rellenamos reserve_req_schedule*/
 
-insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(1,'Lunes', 1, 2);
+/*insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(1,'Lunes', 1, 2);
 insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(1,'Lunes', 1, 4);
 insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(1,'Lunes', 1, 6);
 insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(1,'Lunes', 1, 8);
@@ -781,15 +781,15 @@ insert into reservation_request_schedule(reservation_request_id, day, hour, week
 insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(16,'Jueves', 11, 5);
 insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(16,'Jueves', 11, 7);
 insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(16,'Jueves', 11, 9);
-insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(16,'Jueves', 11, 11);
+insert into reservation_request_schedule(reservation_request_id, day, hour, week) values(16,'Jueves', 11, 11);*/
 /*Rellenamos asignation*/
 
 -- insert into asignation(room_id,subject_id,trimester_id,date) values('MYS-019', 'CI2692', 'ABR-JUL2020', '2020-02-06');
-insert into asignation(room_id,subject_id,trimester_id,date) values('MYS-019', 'CI2693', 'ENE-MAR2020', '2020-02-08');
-insert into asignation(room_id,subject_id,trimester_id,date) values('MYS-019', 'CO3321', 'ENE-MAR2020', '2020-01-02');
+/*insert into asignation(room_id,subject_id,trimester_id,date) values('MYS-019', 'CI2693', 'ENE-MAR2020', '2020-02-08');
+insert into asignation(room_id,subject_id,trimester_id,date) values('MYS-019', 'CO3321', 'ENE-MAR2020', '2020-01-02');*/
 
 /*Rellenamos Horarios de las asignation*/
-insert into asig_schedule(asignation_id, day, hour, week) values(1,'Lunes', 1, 2);
+/*insert into asig_schedule(asignation_id, day, hour, week) values(1,'Lunes', 1, 2);
 insert into asig_schedule(asignation_id, day, hour, week) values(1,'Lunes', 1, 4);
 insert into asig_schedule(asignation_id, day, hour, week) values(1,'Lunes', 1, 6);
 insert into asig_schedule(asignation_id, day, hour, week) values(1,'Lunes', 1, 8);
@@ -830,11 +830,11 @@ insert into asig_schedule(asignation_id, day, hour, week) values(2,'Martes', 2, 
 
 -- insert into asig_schedule(asignation_id, day, hour, week) values(4,'Lunes', 1, 2);
 -- insert into asig_schedule(asignation_id, day, hour, week) values(4,'Lunes', 2, 2);
--- insert into asig_schedule(asignation_id, day, hour, week) values(4,'Lunes', 3, 2);
+-- insert into asig_schedule(asignation_id, day, hour, week) values(4,'Lunes', 3, 2);*/
 
 /*Rellenamos Reservas Especiales*/
-insert into special_reservations(requester_id, laboratory, contact_name, contact_email, reservation_day, reservation_hour, amount_people, observations, trimester_id) values
+/*insert into special_reservations(requester_id, laboratory, contact_name, contact_email, reservation_day, reservation_hour, amount_people, observations, trimester_id) values
 ('13-11341','ldac','David Segura','13-11341@usb.ve','2020-03-07','12:00 PM',10,'Necesito computadoras','ENE-MAR2020');
 
 insert into special_reservations(requester_id, laboratory, contact_name, contact_email, reservation_day, reservation_hour, amount_people, observations, trimester_id) values
-('12-10273','ldc','Jesus Kauze','12-10273@usb.ve','2019-02-27','3:00 PM',19,'','ENE-MAR2019');
+('12-10273','ldc','Jesus Kauze','12-10273@usb.ve','2019-02-27','3:00 PM',19,'','ENE-MAR2019');*/

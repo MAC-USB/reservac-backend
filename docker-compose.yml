@@ -10,6 +10,7 @@ services:
       - ./src/data_base/init_db/createdb.sql:/docker-entrypoint-initdb.d/createdb.sql
       - ./src/data_base/init_db/fillerdb.sql:/docker-entrypoint-initdb.d/fillerdb.sql
       - ./src/data_base:/var/lib/postgres/data
+    restart: always
     ports:
       - '${PORTDB:-5432}:5432'
 
@@ -27,4 +28,5 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
+    restart: always
     command: ./src/scripts/wait-for-it.sh postgresdb:5432 -- npm run dev

@@ -13,7 +13,7 @@
     "test:integration": "mocha ./src/tests/**/*.test.js --exit",
     "test:unit": "./node_modules/.bin/mocha **/__tests__/**/*.test.js --exit",
     "test": "npm run test:unit && npm run test:integration",
-    "dtest": "docker-compose up -d postgresdb && docker-compose run --rm backend npm run test ; docker-compose down --volumes"
+    "dtest": "docker compose up -d postgresdb && docker compose run --rm backend npm run test ; docker compose down --volumes"
   },
   "keywords": [
     "backend",
