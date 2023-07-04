@@ -31,14 +31,14 @@ insert into subject (id, dept, name) values('MA2112','MA','Matematicas 5');*/
 /*Type 0000 departamento, 0101 estudiante, 0102 profesor, 0103, laboratorio, 0104 laboratorio master*/
 
 
-/*insert into usuario(id,name,email,type,is_active, chief) values('15-10611', 'Carlos Gonzalez', '15-10611@usb.ve', 0101,  true, '15-10611');
+insert into usuario(id,name,email,type,is_active, chief) values('15-10611', 'Carlos Gonzalez', '15-10611@usb.ve', 0101,  true, '15-10611');
 insert into usuario(id,name,email,type,is_active, chief) values('15-11523', 'Neil Villamizar', '15-11523@usb.ve', 0101, true, '15-11523');
 insert into usuario(id,name,email,type,is_active, chief) values('ldac', 'MAC', 'ldac@usb.ve', 0103,  true, 'ldac');
 insert into usuario(id,name,email,type,is_active, chief) values('cchang', 'Carolina Chang', 'cchang@usb.ve', 0102, true, 'ldac');
 insert into usuario(id,name,email,type,is_active, chief) values('DCI', 'Departamento de Computacion', 'dci@usb.ve', 0101, true, 'DCI');
 insert into usuario(id,name,email,type,is_active, chief) values('ldc', 'LDC', 'ldc@usb.ve', 0103,  true, 'ldc');
 insert into usuario(id,name,email,type,is_active, chief) values('edublanco', 'Eduardo Blanco', 'edublanco@usb.ve', 0102, true, 'ldc');
-insert into usuario(id, name,email,type,is_active,chief) values('labF', 'Laboratorio F', 'labF@usb.ve', 0104,  true, 'labF');*/
+insert into usuario(id, name,email,type,is_active,chief) values('labF', 'Laboratorio F', 'labF@usb.ve', 0104,  true, 'labF');
 /*Rellenamos la tabla de room*/
 
 

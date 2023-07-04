@@ -2,6 +2,7 @@
 const cors = require('cors')
 const express = require('express');
 const app = express();
+const morgan = require('morgan')
 
 //////////////////////////////////////////////////////////
 //                  CONFIGURATIONS
@@ -25,6 +26,9 @@ setIntervalAsync(generator, 350000);
 //////////////////////////////////////////////////////////
 //                  MIDDLEWARES
 //////////////////////////////////////////////////////////
+
+// Morgan logs
+app.use(morgan('combined'))
 
 // Cors
 app.use(cors())
